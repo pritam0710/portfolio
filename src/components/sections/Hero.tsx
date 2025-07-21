@@ -11,6 +11,7 @@ export const Hero: React.FC = () => {
     'Associate Software Engineer',
     'Full Stack Developer',
     'React Specialist',
+    'Freelancer',
     'Web Technology Enthusiast'
   ];
 
@@ -30,10 +31,10 @@ export const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute top-1/3 right-1/4 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
 
       <div className="container-custom relative z-10">
@@ -160,9 +161,9 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center lg:justify-end"
+            className="flex justify-center lg:justify-end px-8 md:px-0"
           >
-            <div className="relative">
+            <div className="relative mx-auto">
               <motion.div
                 animate={{ 
                   y: [0, -20, 0],
@@ -196,7 +197,7 @@ export const Hero: React.FC = () => {
                   ease: "easeInOut",
                   delay: 1
                 }}
-                className="absolute -top-4 -right-4 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center text-2xl shadow-lg"
+                className="absolute -top-4 -right-2 md:-right-4 w-16 h-16 md:w-20 md:h-20 bg-yellow-400 rounded-full flex items-center justify-center text-xl md:text-2xl shadow-lg"
               >
                 💻
               </motion.div>
@@ -212,7 +213,7 @@ export const Hero: React.FC = () => {
                   ease: "easeInOut",
                   delay: 2
                 }}
-                className="absolute -bottom-6 -left-6 w-16 h-16 bg-green-400 rounded-full flex items-center justify-center text-xl shadow-lg"
+                className="absolute -bottom-4 -left-2 md:-left-6 md:-bottom-6 w-14 h-14 md:w-16 md:h-16 bg-green-400 rounded-full flex items-center justify-center text-lg md:text-xl shadow-lg"
               >
                 🚀
               </motion.div>
