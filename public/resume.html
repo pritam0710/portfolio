@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritam Prakash - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1e40af;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .summary {
+            text-align: justify;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .skill-category h4 {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1e40af;
+        }
+        
+        .skills-list {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        
+        .experience-item {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        
+        .company-name {
+            font-weight: bold;
+            font-size: 16px;
+            color: #1e40af;
+        }
+        
+        .duration {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .position {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #374151;
+        }
+        
+        .responsibilities {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .responsibilities li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .responsibilities li:before {
+            content: "▪";
+            color: #2563eb;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .project-item {
+            margin-bottom: 20px;
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #2563eb;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            font-size: 14px;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+        
+        .project-tech {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            font-size: 14px;
+            color: #374151;
+        }
+        
+        .institution {
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .additional-info {
+            background: #f0f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0f2fe;
+        }
+        
+        .additional-info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .additional-info li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+        
+        .additional-info li:before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+                font-size: 12px;
+            }
+            
+            .section {
+                margin-bottom: 20px;
+            }
+            
+            .name {
+                font-size: 28px;
+            }
+            
+            .section-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">PRITAM PRAKASH</div>
+        <div class="contact-info">
+            📧 <a href="mailto:prakashpritam07@gmail.com">prakashpritam07@gmail.com</a> | 📱 +91 8271345623<br>
+            🔗 <a href="https://www.linkedin.com/in/pritam-prakash-11924019b" target="_blank">LinkedIn</a> | 
+            💻 <a href="https://github.com/pritam0710" target="_blank">GitHub</a> | 
+            📍 Ahmedabad, India
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="summary">
+            Detail-oriented Web Developer with over 2 years of experience, currently working as an Associate Software Engineer at Asite Solutions. Proven track record of delivering scalable, responsive, and maintainable applications using modern web technologies. Experienced in migrating legacy systems, developing custom UI components, and building RESTful APIs. Possesses a solid understanding of Agile methodologies, microservices, and DevOps practices.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skills-list">
+                    ReactJS, Redux, React Query, Angular 17, AngularJS, RxJS, JavaScript, TypeScript, HTML5, CSS3, NextJS (basic), AlpineJS (basic)
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skills-list">
+                    NodeJS, NestJS, MongoDB, SQL, Redis, RESTful APIs, Microservices (basic)
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Tools & DevOps</h4>
+                <div class="skills-list">
+                    Git, GitHub, Bitbucket, Docker (basic), Jira, Agile Methodologies
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="experience-item">
+            <div class="company-header">
+                <div class="company-name">Asite Solutions Pvt. Ltd. – Ahmedabad</div>
+                <div class="duration">Feb 2023 – Present</div>
+            </div>
+            
+            <div class="position">Associate Software Engineer (Jun 2024 – Present)</div>
+            <ul class="responsibilities">
+                <li>Spearheaded the migration of core enterprise modules from AngularJS 1.8 to Angular 17, enhancing performance and maintainability</li>
+                <li>Designed and developed reusable UI components including DatePicker, TimePicker, dynamic Repeating Tables, and Layout Manager for form-building applications</li>
+                <li>Implemented advanced business logic using Blockly for real-time calculation and form behavior customization</li>
+                <li>Created and consumed RESTful APIs using NestJS to support migrated frontend modules</li>
+            </ul>
+            
+            <div class="position">Trainee Software Engineer (Jun 2023 – May 2024)</div>
+            <ul class="responsibilities">
+                <li>Addressed high-priority bug fixes and contributed to client-specific feature enhancements under tight deadlines</li>
+                <li>Integrated multilingual font support and implemented custom Blockly blocks for advanced use cases</li>
+                <li>Collaborated with QA and backend teams to develop robust solutions, including a Puppeteer-based module for exporting dynamic forms as PDFs</li>
+                <li>Supported the extension of date-time difference calculations and custom auto-numbering logic</li>
+            </ul>
+            
+            <div class="position">Software Development Intern (Feb 2023 – May 2023)</div>
+            <ul class="responsibilities">
+                <li>Developed key UI modules for a Project Management System, including authentication, authorization, dashboard, and role-based access control using Angular</li>
+                <li>Collaborated closely with the backend team (Java) and UI team members to ensure smooth integration and code consistency</li>
+                <li>Gained practical experience in Agile development, version control (Git), and cross-functional teamwork</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+        
+        <div class="project-item">
+            <div class="project-title">Learning Management Platform</div>
+            <div class="project-tech">MERN Stack</div>
+            <ul class="responsibilities">
+                <li>Developed a full-fledged e-learning application that allows users to watch video lectures, purchase courses, and access blog content</li>
+                <li>Implemented secure user authentication, dynamic routing, and a clean dashboard layout for both students and instructors</li>
+                <li>Used MongoDB and NodeJS to manage course content, transactions, and user data efficiently</li>
+            </ul>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">AI-Driven Job Portal</div>
+            <div class="project-tech">MERN Stack + AI Integration</div>
+            <ul class="responsibilities">
+                <li>Built an intelligent job matching platform designed to assist recruiters in shortlisting candidates efficiently</li>
+                <li>Integrated AI-based filtering mechanisms to automate resume screening and match candidates with suitable job roles</li>
+                <li>Designed responsive UI using ReactJS and managed backend operations with NodeJS and MongoDB</li>
+            </ul>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">Project Management System</div>
+            <div class="project-tech">Angular (UI) + Java (Backend)</div>
+            <ul class="responsibilities">
+                <li>Developed during internship at Asite Solutions, this project involved creating UI modules for user authentication, dashboard, and role management</li>
+                <li>Focused on building reusable Angular components and maintaining consistent styling across the platform</li>
+                <li>Collaborated in an Agile team environment, supporting integration with Java-based backend services</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        
+        <div class="education-item">
+            <div class="degree">Master of Computer Applications (MCA)</div>
+            <div class="institution">Parul University, Vadodara — 2023</div>
+        </div>
+        
+        <div class="education-item">
+            <div class="degree">Bachelor of Computer Applications (BCA)</div>
+            <div class="institution">Maltidhari College, Patna — 2020</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Additional Information</div>
+        <div class="additional-info">
+            <ul>
+                <li>Notice Period: 2 Months (Negotiable)</li>
+                <li>Strong problem-solving and debugging skills</li>
+                <li>Excellent written and verbal communication</li>
+                <li>Familiar with Agile processes and version control workflows</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
