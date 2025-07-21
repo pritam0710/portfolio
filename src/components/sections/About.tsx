@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Code, Users, Award, Zap, Download, MapPin, Calendar } from 'lucide-react';
 import { Button, Card } from '../ui';
 import { personalInfo } from '../../data';
+import avatarImage from '../../assets/my_avatar.png';
 
 export const About: React.FC = () => {
   const highlights = [
@@ -70,7 +71,7 @@ export const About: React.FC = () => {
               <div className="flex items-start space-x-4 mb-6">
                 <div className="w-16 h-16 rounded-full overflow-hidden ring-4 ring-primary-200">
                   <img 
-                    src="/my_avatar.png" 
+                    src={avatarImage} 
                     alt={`${personalInfo.name} - Profile Photo`}
                     className="w-full h-full object-cover"
                   />

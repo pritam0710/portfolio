@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, Download, Mail, Github, Linkedin } from 'lucide-react';
 import { Button } from '../ui';
 import { personalInfo, socialLinks } from '../../data';
+import avatarImage from '../../assets/my_avatar.png';
 
 export const Hero: React.FC = () => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -176,7 +177,7 @@ export const Hero: React.FC = () => {
               >
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img 
-                    src="/my_avatar.png" 
+                    src={avatarImage} 
                     alt={`${personalInfo.name} - Professional Photo`}
                     className="w-full h-full object-cover"
                   />
