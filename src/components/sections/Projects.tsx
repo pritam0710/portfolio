@@ -30,7 +30,7 @@ export const Projects: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="section-padding bg-gray-50">
+    <section id="projects" className="section-padding bg-gray-50 mobile-safe">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
@@ -54,7 +54,7 @@ export const Projects: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="flex flex-wrap justify-center mb-12 gap-4"
+          className="flex flex-wrap justify-center mb-12 gap-4 mobile-safe"
         >
           <div className="flex items-center space-x-2 mb-4">
             <Filter className="w-5 h-5 text-gray-600" />

@@ -22,7 +22,7 @@ export const Experience: React.FC = () => {
   };
 
   return (
-    <section id="experience" className="section-padding bg-white">
+    <section id="experience" className="section-padding bg-white mobile-safe">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div

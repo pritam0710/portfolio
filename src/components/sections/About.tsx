@@ -41,7 +41,7 @@ export const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding bg-white mobile-safe">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div

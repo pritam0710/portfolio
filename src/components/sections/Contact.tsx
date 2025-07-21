@@ -96,7 +96,7 @@ export const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-white">
+    <section id="contact" className="section-padding bg-white mobile-safe">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div

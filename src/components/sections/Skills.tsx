@@ -11,7 +11,7 @@ export const Skills: React.FC = () => {
   const categoryColors = ['text-blue-600', 'text-green-600', 'text-purple-600'];
 
   return (
-    <section id="skills" className="section-padding bg-gray-50">
+    <section id="skills" className="section-padding bg-gray-50 mobile-safe">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div

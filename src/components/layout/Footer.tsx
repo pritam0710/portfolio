@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white mobile-safe">
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Personal Info */}
